@@ -1,16 +1,33 @@
-* relación con programación (trabajo, etc...)
-* intereses tecnologicos
-      - software libre
-      - diseño
-      - web
-      - C#
-      - Java
-      - Android
-      - iOS
-      - IOT (Arduino, Raspberry ...)
-      - ...
+relación con programación (trabajo, aficción, etc...)
 
-* Que temas te gustaria tratar en codersCantabria?
+intereses tecnologicos
+* software libre
+* diseño
+* web
+* movil
+* IOT (Arduino, Raspberry ...)
+* redes
+* aplicaciones
+* sistemas
+* paradigmas (OO
+* patrones de diseño (programming design patterns)
+* Utiles (editores, entornos de desarrollo)
+* algoritmos
+* complejidad computacional (eficiencia / big-o etc.)
+* Teoria
+* ...
 
-* Que podrias aportar a codersCantabria?
+Que lenguajes utilizas
+* Java
+* PHP
+* etc..
 
+Otros lenguajes que te interesan conocer
+
+
+
+Que temas te gustaria tratar en codersCantabria?
+
+Que podrias aportar a codersCantabria?
+
+Disponibilidad: Mejores dias/horas para tener quedadas
