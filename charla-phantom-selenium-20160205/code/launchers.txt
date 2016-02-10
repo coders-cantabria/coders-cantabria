@@ -1,0 +1,5 @@
+phantomjs 1-consolelog.js
+
+phantomjs 2-navigate-scrshot.js
+
+phantomjs --cookies-file=cantabriajscookies.txt 2-navigate-scrshot.js 
