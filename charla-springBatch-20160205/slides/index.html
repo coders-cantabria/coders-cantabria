@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>SpringBatch – Slide</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<!--<link rel="stylesheet" href="css/theme/black.css" id="theme">-->
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+<!--http://docs.spring.io/spring-batch/reference/html/spring-batch-intro.html-->
+<!-- http://eltamiz.com/elcedazo/2009/04/27/la-ventana-batch/-->
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>Procesamiento de datos con</h3>
+					<h1><font color="#e69138">SpringBatch</font></h1>
+					<p>
+						<small><a href="http://www.coderscantabria.com">Coders Cantabria</a> / <a href="http://twitter.com/roci_munoz">@roci_munoz</a></small>
+					</p>
+					<p><small><a href="https://github.com/rocimunoz/springBatch">Github: rocimunoz/springBatch</a></small></p>
+				</section>
+
+
+				<!-- Que es un proceso batch -->
+				<section>
+					
+					<h2 align="left"><font color="#e69138">Qué es un Proceso Batch</font></h2>
+					
+					<div align="left">
+					<p>Ejecucion sin la supervision  del usuario</p>
+					<p>Ejecucion fuera del horario laboral</p>
+					<p>Procesan gran cantidad de datos</p>
+					<p>Son tareas repetitivas</p>
+					<p>Ej: procesamiento datos bancarios, facturas, imágenes</p>
+					
+					</div>
+					
+					
+				</section>
+
+				<!-- Caracteristicas de un proceso batch -->
+				<section>
+					
+					<section>
+						<h2 align="left"><font color="#e69138">Caracteristicas proceso batch</font></h2>
+						<div align="left"> 
+							<ol align="left">
+								<li align="left">Workflow de tareas</li>
+								<li align="left">Gestión de Transacciones</li>
+								<li align="left">Tratamiento de Excepciones</li>
+								<li align="left">Hilos de ejecucion</li>
+								<li align="left">Bloqueos</li>
+							</ol>
+							
+					
+						</div>
+					</section>
+					
+					<!-- workflow -->
+					<section>
+						<div align="left">
+						<h3>1. Workflow de tareas</h3>
+						<p>Lo primero es saber qué tareas va a realizar mi proceso.</p>
+						<p>Tareas secuenciales, en paralelo, repetitivas, dependientes de otras tareas ...<p/>
+					</div>
+					</section>
+
+					<!-- transacciones -->
+					<section>
+						
+						<div align="left">
+						<h3>2. Gestion de Transacciones</h3>
+						<p>Hay que pensar qué hacer ante un fallo y como gestionar las transacciones. </p>
+						<p>¿Qué cantidad de datos voy a tener que gestionar?</p>
+						<p>Ante un fallo, ¿hago rollback? ¿persisto los datos?</p>
+						<p>¿Hasta donde hago rollback?</p>
+						
+					</div>
+					</section>
+
+					<!-- excepciones -->
+					<section>
+						
+						<div align="left">
+						<h3>3. Tratamiento de Excepciones</h3>
+						<p>Caidas de conexión. ¿Reintento la conexión o finalizo el batch?</p>
+						<p>Ante un fallo de negocio, ¿termino la ejecución o continuo?</p>
+
+						
+					</div>
+					</section>
+					<!-- Hilos de ejecucion -->
+					<section>
+						
+						<div align="left">
+						<h3>4. Hilos de ejecucion</h3>
+						<p>¿Cuánto tiempo tengo para que mi proceso termine?</p>
+						<p>¿Tiene que terminar a una hora determinada?</p>
+						<p>¿Necesita el usuario los datos disponibles a primera hora de la mañana?</p>
+						<p>¿Son necesarios hilos?¿Tengo memoria suficiente en la máquina para soportar X hilos de ejecución?</p>
+						
+					</div>
+					</section>
+
+					<!-- Bloqueos -->
+					<section>
+						
+						<div align="left">
+						<h3>5. Bloqueos</h3>
+						<p>Pensar en la estrategia de bloqueos a utilizar si se producen</p>
+						<p>Patrón optimistic locking</p>
+						<p>Patrón pesismistic locking</p>
+					</div>
+					</section>
+					
+				</section>
+
+				<!-- SpringBatch-->
+				<section>
+					<section>
+					<h2 align="left"><font color="#e69138">SpringBatch</font></h2>
+					<div align="left">
+							<p>Framework opensource para la creacion de procesos batch</p>
+							<p>Escalable y facil de personalizar</p>
+							<p><a href="http://docs.spring.io/spring-batch/reference/html/">Documentacion Spring Batch</a></p>
+					
+					</div>	<img align="center" data-src="img/favicon.ico" alt="Spring">
+					</section>
+					<section>bla bla</section>
+				</section>
+
+				<!-- Arquitectura -->
+				<section>
+					<section>
+					<h2 align="left"><font color="#e69138">Arquitectura</font></h2>
+					<img align="center" data-src="img/estructura.png" alt="Spring">
+					</section>
+					
+					<!-- JobRepository -->
+					<section>
+						<h3>Job Repository</h3>
+						Almacena en tiempo de ejecución información sobre los jobs
+						
+					<pre><code class="xml" data-trim contenteditable style="font-size: 18px;height:200px">
+<bean id="jobRepository" class="...MapJobRepositoryFactoryBean">
+	<property 
+			name="transactionManager" 
+			ref="JobTransactionManager">
+	</property>
+</bean>
+</code></pre>
+					</section>
+					<!-- JobLauncher -->
+					<section>
+						<h3>Job Launcher</h3>
+						Responsable de ejecutar cada uno de los jobs
+					<pre><code class="xml" data-trim contenteditable style="font-size: 18px;height:200px">
+<bean id="jobLauncher" 
+	  class="...SimpleJobLauncher">
+      <property name="jobRepository" ref="jobRepository"></property>
+</bean>
+					</code></pre>
+					</section>
+					<!-- Job -->
+					<section>
+						<h3>Job</h3>
+						Proceso de ejecución formado por uno o más steps
+						<pre>
+					<code class="xml" data-trim contenteditable style="font-size: 18px;height:200px">
+<batch:job id="nombreJob" job-repository="jobRepository"> 
+...
+</batch:job>
+</code></pre>
+					</section>
+					<!-- Step -->
+					<section>
+						<h3>Step</h3>
+						<p>Representación de un lote. </p>
+						<p>Un job está formado por N steps.</p>
+<pre>
+					<code class="xml" data-trim contenteditable style="font-size: 18px;height:200px">
+<batch:step id="AccesoFTP" >
+   <batch:tasklet ref="TaskAccesoFTP" transaction-manager="transactionManager"></batch:tasklet>
+   <batch:next on="*" to="descomprimirFichero"></batch:next>        
+</batch:step>
+</code></pre>
+					</section>
+				</section>				
+
+				<!-- Steps especiales: Chunk Oriented-->
+				<section>
+					<section>
+					<h2 align="left"><font color="#e69138">Steps especiales: Chunk Oriented</font></h2>
+					<div align="left">
+							<p>Tecnica de procesamiento orientada a "porciones"</p>
+							<p>El reader lee una porción de datos, el processor los procesa
+							y en el writer se envian a BBDD</p>
+							<p>Cada porción o chunk se gestiona en transacciones independientes</p>
+							
+							
+					
+					</div>	<img align="center" data-src="img/chunk.png" alt="Spring">
+					</section>
+					<section><h3>ItemReader</h3>
+					<div align=left>
+					<p>Hay itemReaders definidos por Spring</p>
+					<ul>
+						<li>FlatFileItemReader: el recurso es un fichero</li>
+						<li>ListItemReader: el recurso es una lista</li>
+						<li>MongoItemReader: el recurso es una query en Mongo</li>
+					</ul>
+					<p>Podemos definir nuestro propio Reader</p>
+					
+					</div>
+					</section>
+					<section><h3>ItemProcessor</h3>
+					<div align=left>
+					<p>No es obligatorio usarlo</p>
+					
+					<p>Permite tratar los datos recibidos por el Reader</p>
+					
+					</div>
+
+					</section>
+					<section><h3>ItemWriter</h3>
+					<div align=left>
+					<p>Guarda la informacion leida por el Reader y tratada por el processor</p>
+					
+					<p><u>* commit-interval</u>: tamaño de la porción a tratar</p>
+					<pre>
+					<code class="xml" data-trim contenteditable style="font-size: 18px;height:200px">
+<batch:step id="insertaTemplate" next="deleteFTPFiles" >        
+   <batch:tasklet transaction-manager="transactionManager" task-executor="taskExecutor">
+       <batch:chunk    reader="itemReader"
+                       writer="itemWriter"
+                       commit-interval="${commitInterval}">
+       </batch:chunk>
+   </batch:tasklet>
+</batch:step>
+					</code></pre>
+					</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+					<h2 align="left"><font color="#e69138">Workflow de Steps</font></h2>
+					<div align="left"><h3>Ejemplo de step condicional</h3>
+					<pre>
+					<code class="hljs" data-trim contenteditable>
+<batch:step id="stepA">
+    <batch:tasklet ref="TaskStepA"></batch:tasklet>
+    <batch:next on="*" to="stepB"></batch:next>
+    <batch:next on="FAILED" to="stepC"></batch:next>
+</batch:step>
+					</code></pre></div>
+					<img src="img/workflow.png">
+					</section>
+					
+				</section>
+
+				<!-- Gestion de fallos-->
+				<section>
+					<h2 align="left"><font color="#e69138">Gestion de fallos</font></h2>
+					<div align="left">
+					<p>Podemos configurar los steps y sus rollbacks</p>
+						<p>Si se produce una excepcion de tipo ValidationException, no se hará rollback</p>
+						<pre>
+					<code class="xml" data-trim contenteditable>
+<batch:step id="step1">
+   <batch:tasklet>
+      <chunk reader="itemReader" writer="itemWriter" commit-interval="2"></chunk>
+      <no-rollback-exception-classes>
+         <include class="org.springframework.batch.item.validator.ValidationException"></include>
+      </no-rollback-exception-classes>
+   </batch:tasklet>
+</batch:step>
+					</code></pre>
+					</div>
+					</section>
+					<!-- Gestion de Transacciones-->
+					<section>
+						<h2 align="left"><font color="#e69138">Gestion de transacciones</font></h2>
+					<div align="left">
+					<ul><li><b>PROPAGATION_REQUIRED:</b> <br/>soporte a la transaccion actual. Crea una nueva si no existe. </li>
+					<li><b>PROPAGATION_REQUIRES_NEW:</b> <br/>crea una nueva transaccion suspendiendo la anterior en caso de existir.
+					<li> <b>PROPAGATION_SUPPORTS:</b> <br/>soporte a la transaccion actual. Si no existe transaccion, no existe una nueva</li>	
+					<li> <b>ISOLATION_DEFAULT:</b> <br/>Utiliza la configuracion por defecto del datastore</li>
+</ul>
+					</section>
+
+					<section>
+					   <h2 align="left"><font color="#e69138">Gestion de hilos</font></h2>
+					   <p>
+					   	corePoolSize: Tamaño de hilos del proceso batch
+
+					   </p>	
+<pre>
+					<code class="xml" data-trim contenteditable>
+<bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+    <property name="corePoolSize" value="${corePoolSize}" />
+    <property name="maxPoolSize"  value="${maxPoolSize}" />
+</bean>
+					</code></pre>						
+					</section>
+
+					<!-- Demo -->
+					<section>
+						<h2 align="left"><font color="#e69138">Demo</font></h2>
+						<img src="img/codersDemo.png" width="400px" heigth="250px"/>
+					</section>
+					<!-- Conclusiones -->
+					<section>
+						<h2 align="left"><font color="#e69138">Conclusiones</font></h2>
+						<ul><li>Framework muy robusto para procesamiento batch</li>
+						<li>Abstrae de muchas tareas complejas al desarrollador</li>
+						<li>Muy escalable para adaptarlo a cualquier proceso</li>
+						<li><font color="red">No es facil detectar errores</font></li>
+						<li><font color="red">Comportamientos no deseables si no configuras bien</font></li>
+					</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

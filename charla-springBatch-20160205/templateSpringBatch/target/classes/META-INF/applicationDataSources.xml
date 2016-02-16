@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:flow="http://www.springframework.org/schema/webflow-config"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:jms="http://www.springframework.org/schema/jms"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+       xmlns:osgi="http://www.springframework.org/schema/osgi"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:batch="http://www.springframework.org/schema/batch"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+          http://www.springframework.org/schema/webflow-config http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.1.xsd
+          http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
+          http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms-3.2.xsd
+          http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.2.xsd
+          http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi-1.2.xsd
+          http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+          http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
+          http://www.springframework.org/schema/batch http://www.springframework.org/schema/batch/spring-batch-2.1.xsd">
+
+    
+    <context:component-scan base-package="com.template"/>
+   
+    
+    <!-- CONFIGURACION DE CONEXION CON LA BASE DE DATOS  -->       
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:config/template/cfg/SqlMapConfig.properties</value>
+                <value>classpath:config/template/cfg/prj.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- ************************* CONEXION 1:  ****************************************-->        
+    <bean id="sqlMapClientTemplate" class="org.springframework.orm.ibatis.SqlMapClientTemplate" >
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+
+    <bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+        <property name="configLocation">
+            <value>
+                classpath:ibatis/SqlMapConfig.xml
+            </value>
+        </property>
+        <property name="dataSource">
+            <ref bean="dataSourceTemplate"/>
+        </property>
+    </bean>
+    
+    <bean id="dataSourceTemplate" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName">
+            <value>${driver}</value>
+        </property>
+        <property name="url">
+            <value>${url}</value>
+        </property>
+        <property name="username">
+            <value>${username}</value>
+        </property>
+        <property name="password">
+            <value>${password}</value>
+        </property>
+        <property name="defaultReadOnly">
+            <value>${defaultReadOnly}</value>
+        </property>
+        <property name="validationQuery">
+            <value>${validationQuery}</value>
+        </property>
+        <property name="maxActive">
+            <value>${maxActive}</value>
+        </property>
+        <property name="maxWait">
+            <value>${maxWait}</value>
+        </property>
+        <property name="defaultAutoCommit">
+            <value>false</value>
+        </property>
+        <property name="testOnReturn">
+            <value>${testOnReturn}</value>
+        </property>
+        <property name="testOnBorrow">
+            <value>${testOnBorrow}</value>
+        </property>
+        <property name="removeAbandoned">
+            <value>${removeAbandoned}</value>
+        </property>
+        <property name="removeAbandonedTimeout">
+            <value>${removeAbandonedTimeout}</value>
+        </property>
+        <property name="logAbandoned">
+            <value>${logAbandoned}</value>
+        </property>
+        <property name="maxIdle">
+            <value>${maxIdle}</value>
+        </property>
+        <property name="poolPreparedStatements">
+            <value>true</value>
+        </property>
+    </bean>
+
+    
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource">
+            <ref bean="dataSourceTemplate"/>
+        </property>
+    </bean>     
+    
+    <bean id="ApellidosDao" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager"/>
+        </property>
+        <property name="target">
+            <ref bean="ApellidosDaoImpl"/>
+        </property>
+        <property name="transactionAttributeSource">
+            <ref local="defaultTxAttributes"/>
+        </property>
+    </bean>
+                                           
+    <bean id="ApellidosDaoImpl" class="com.template.dao.impl.ApellidosDaoImpl">
+        <property name="sqlMapClient">
+            <ref local="sqlMapClient"/>
+        </property>
+    </bean> 
+
+                   
+    <bean id="defaultTxAttributes"
+          class="org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource">
+        <property name="properties">
+            <props>
+               <prop key="get*">PROPAGATION_SUPPORTS, ISOLATION_DEFAULT, readOnly</prop>
+                <prop key="insert*">PROPAGATION_REQUIRES_NEW, ISOLATION_DEFAULT, -Exception,-RuntimeException</prop>
+                <prop key="guardar*">PROPAGATION_REQUIRED, ISOLATION_DEFAULT, -Exception,-RuntimeException</prop>
+                <prop key="update*">PROPAGATION_REQUIRES_NEW, ISOLATION_DEFAULT, -Exception,-RuntimeException</prop>
+                <prop key="delete*">PROPAGATION_REQUIRES_NEW, ISOLATION_DEFAULT, -Exception,-RuntimeException</prop>
+            </props>
+        </property>
+    </bean>
+    
+    <bean id="jobRepository" class="org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean">
+        <property name="transactionManager" ref="JobTransactionManager" />
+    </bean>
+
+    <bean id="JobTransactionManager" class="org.springframework.batch.support.transaction.ResourcelessTransactionManager" />
+
+
+    <bean id="jobExplorer" class="org.springframework.batch.core.explore.support.JobExplorerFactoryBean">
+        <property name="dataSource" ref="dataSourceTemplate"/>
+    </bean>
+        
+        
+</beans>

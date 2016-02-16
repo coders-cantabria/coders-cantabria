@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:flow="http://www.springframework.org/schema/webflow-config"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:jms="http://www.springframework.org/schema/jms"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+       xmlns:osgi="http://www.springframework.org/schema/osgi"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:batch="http://www.springframework.org/schema/batch"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+          http://www.springframework.org/schema/webflow-config http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.1.xsd
+          http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
+          http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms-3.2.xsd
+          http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.2.xsd
+          http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi-1.2.xsd
+          http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+          http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
+          http://www.springframework.org/schema/batch http://www.springframework.org/schema/batch/spring-batch-3.0.xsd">
+
+    
+    <context:component-scan base-package="com.template"/>
+   
+    <!--
+        Un ejecutador de tareas. A través de esta clase es que se inicia la
+        ejecución de las taras batch.
+    -->
+    <bean id="jobLauncher" class="org.springframework.batch.core.launch.support.SimpleJobLauncher">
+        <property name="jobRepository" ref="jobRepository" />
+    </bean>
+       
+   
+    <batch:job id="cargaTemplate" job-repository="jobRepository">    
+        
+        <batch:step id="AccesoFTP" >
+            <batch:tasklet ref="TaskAccesoFTP" transaction-manager="transactionManager"/>
+            <batch:next on="*" to="descomprimirFichero" />
+            <batch:next on="FAILED" to="decider" />
+        </batch:step>
+        
+        <batch:decision decider="DeciderReintentosFTP" id="decider">
+            <batch:next on="DECISOR_REINTENTOS" to="AccesoFTP" />
+            <batch:next on="DECISOR_FIN" to="fin" />
+
+        </batch:decision>
+
+        <batch:step id="descomprimirFichero">
+            <batch:tasklet ref="TaskDescomprimirFichero"/>
+            <batch:next on="*" to="deleteBBDD" />
+            <batch:next on="FAILED" to="fin" />
+        </batch:step>
+        
+        <batch:step id="deleteBBDD" >
+            <batch:tasklet ref="TaskDeleteBBDD" transaction-manager="transactionManager"/>
+            <batch:next on="*" to="insertaTemplate" />
+            <batch:next on="FAILED" to="fin" />
+        </batch:step>
+          
+        <batch:step id="insertaTemplate" next="deleteFTPFiles" >        
+            <batch:tasklet transaction-manager="transactionManager" task-executor="taskExecutor">
+                <batch:chunk    reader="itemReader"
+                                processor="itemProcessor"
+                                writer="itemWriter"
+                                commit-interval="${commitInterval}"
+                />
+            </batch:tasklet>
+        </batch:step>
+        
+        <batch:step id="deleteFTPFiles" >
+            <batch:tasklet ref="TaskDeleteFTPFiles" transaction-manager="transactionManager"/>
+            <batch:next on="*" to="deleteLocalFiles" />
+            <batch:next on="FAILED" to="fin" />
+        </batch:step>
+        
+        <batch:step id="deleteLocalFiles" >
+            <batch:tasklet ref="TaskDeleteLocalFiles" transaction-manager="transactionManager"/>
+            <batch:next on="*" to="fin" />
+        </batch:step>
+        
+        
+        <batch:step id="fin">
+            <batch:tasklet ref="finTasklet"/>
+        </batch:step>        
+       
+    </batch:job>
+          
+    <bean id="DeciderReintentosFTP" class="com.template.negocio.DeciderReintentosFTP"/>
+        
+    <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <property name="corePoolSize" value="${corePoolSize}" />
+        <property name="maxPoolSize"  value="${maxPoolSize}" />
+    </bean>
+      
+    <!-- Tarea de borrado de tablas -->  
+    <bean id="TaskDeleteBBDD" class="com.template.negocio.TaskDeleteBBDD"/>            
+    
+    <!-- Tarea de borrado ficheros locales -->  
+    <bean id="TaskDeleteLocalFiles" class="com.template.negocio.TaskDeleteLocalFiles" />            
+      
+    <bean id="TaskDeleteFTPFiles" class="com.template.negocio.TaskDeleteFTPFiles" />            
+      
+    <!-- Tarea de Acceso al FTP -->  
+    <bean id="TaskAccesoFTP" class="com.template.negocio.TaskAccesoFTP"/>            
+    
+    <!-- Tarea para descomprimir el fichero en una ruta local -->
+    <bean id="TaskDescomprimirFichero" class="com.template.negocio.TaskUnzipFiles"/>            
+                         
+    
+    <bean id="itemReader" class="org.springframework.batch.item.file.MultiResourceItemReader">
+        <property name="resources">
+            <value>file:./ficheros/extraccion_apellidos_ine.csv</value>  
+        </property>
+        <property name="delegate" ref="FlatFileItemReader" />
+        <property name="strict" value="false"/>
+        <!--<property name="resources" value="classpath:${dirLocal}*.csv" />-->
+        <!--<property name="resources" value="classpath:${dirLocal}*.csv" />-->
+        
+        <!--<property name="resources" value="ficheros/*" />-->
+        <!--<property name="resources" value="${dirLocal}*.csv" />-->
+        
+        <!--
+        <property name="resources">
+            <value>./ficheros/*.csv</value>
+        </property>-->
+    </bean>
+    
+    
+    <!-- Reader de extraccion de datos -->
+    <bean id="FlatFileItemReader" class="org.springframework.batch.item.file.FlatFileItemReader" >
+        <property name="lineMapper">
+            <bean class="org.springframework.batch.item.file.mapping.DefaultLineMapper">
+                <property name="lineTokenizer">
+                    <bean class="com.template.negocio.CustomDelimitedLineTokenizer">
+                        <property name="delimiter" value="${caracterSeparador}" />
+                        <property name="quoteCharacter" value="'" />
+                        <property name="names" value="${ordenCamposFichero}" />
+                    </bean>
+                </property>
+                <property name="fieldSetMapper" ref="fieldSetMapper" />
+	   
+            </bean>
+        </property>
+       
+    </bean>
+    
+    <!-- Clase que mapea la linea del fichero a objeto Apellidos -->
+    <bean id="fieldSetMapper" class="com.template.negocio.Apellidos_Mapper"/>
+    
+    <bean id="itemWriter" class="com.template.negocio.ServicioWriter"/>    
+    <bean id="itemProcessor" class="com.template.negocio.ServicioProcess">    
+       
+    </bean>      
+       
+    <bean id="finTasklet" class="com.template.negocio.TaskFin">
+    </bean>    
+
+    
+
+   
+
+</beans>

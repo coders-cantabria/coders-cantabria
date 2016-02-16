@@ -1,0 +1,1172 @@
+02/02/2016 13:54:55 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 13:54:55 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20b8db77: startup date [Tue Feb 02 13:54:55 CET 2016]; root of context hierarchy
+02/02/2016 13:54:55 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 13:54:56 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: The element [insertaTemplate] is unreachable
+Offending resource: class path resource [META-INF/applicationContext.xml]
+02/02/2016 13:54:56 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 13:54:56 INFO  - Ejecutado en 536 milisisegundos
+02/02/2016 13:54:56 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+02/02/2016 13:55:59 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 13:55:59 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20b8db77: startup date [Tue Feb 02 13:55:59 CET 2016]; root of context hierarchy
+02/02/2016 13:55:59 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 13:55:59 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+02/02/2016 13:55:59 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+02/02/2016 13:55:59 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+02/02/2016 13:55:59 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3fc3f8fd: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 13:55:59 INFO  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3fc3f8fd: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 13:55:59 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'IApellidosDao' defined in file [C:\Users\rmpinedo\Desktop\Rociiiiiito\PROYECTOS\springBatch\templateSpringBatch\target\classes\com\template\dao\impl\ApellidosDaoImpl.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [com.ibatis.sqlmap.client.SqlMapClient]: : Cannot find class [com.template.negocio.Config_Agregacion_Hippeis_Mapper] for bean with name 'fieldSetMapper' defined in class path resource [META-INF/applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.template.negocio.Config_Agregacion_Hippeis_Mapper; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.template.negocio.Config_Agregacion_Hippeis_Mapper] for bean with name 'fieldSetMapper' defined in class path resource [META-INF/applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.template.negocio.Config_Agregacion_Hippeis_Mapper
+02/02/2016 13:55:59 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 13:55:59 INFO  - Ejecutado en 880 milisisegundos
+02/02/2016 13:55:59 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+02/02/2016 13:59:09 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 13:59:09 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20b8db77: startup date [Tue Feb 02 13:59:09 CET 2016]; root of context hierarchy
+02/02/2016 13:59:09 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 13:59:09 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+02/02/2016 13:59:09 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+02/02/2016 13:59:09 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+02/02/2016 13:59:09 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5b0fcabf: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 13:59:10 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+02/02/2016 13:59:10 INFO  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5b0fcabf: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 13:59:10 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'deleteBBDD': Cannot resolve reference to bean 'TaskDeleteBBDD' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TaskDeleteBBDD': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.template.dao.impl.ApellidosDaoImpl com.template.negocio.TaskDeleteBBDD.apellidosDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No unique bean of type [com.template.dao.impl.ApellidosDaoImpl] is defined: expected single matching bean but found 2: [IApellidosDao, ApellidosDaoImpl]
+02/02/2016 13:59:10 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 13:59:10 INFO  - Ejecutado en 1 segundo, 285 milisisegundos
+02/02/2016 13:59:10 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+02/02/2016 14:39:31 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 14:39:31 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20b8db77: startup date [Tue Feb 02 14:39:31 CET 2016]; root of context hierarchy
+02/02/2016 14:39:31 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 14:39:32 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+02/02/2016 14:39:32 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+02/02/2016 14:39:32 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+02/02/2016 14:39:32 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@36cc176d: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 14:39:33 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+02/02/2016 14:39:33 INFO  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@36cc176d: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 14:39:33 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'deleteBBDD': Cannot resolve reference to bean 'TaskDeleteBBDD' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TaskDeleteBBDD': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.template.dao.impl.ApellidosDaoImpl com.template.negocio.TaskDeleteBBDD.apellidosDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No unique bean of type [com.template.dao.impl.ApellidosDaoImpl] is defined: expected single matching bean but found 2: [IApellidosDao, ApellidosDaoImpl]
+02/02/2016 14:39:33 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 14:39:33 INFO  - Ejecutado en 1 segundo, 272 milisisegundos
+02/02/2016 14:39:33 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+02/02/2016 14:53:22 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 14:53:22 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20b8db77: startup date [Tue Feb 02 14:53:22 CET 2016]; root of context hierarchy
+02/02/2016 14:53:22 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 14:53:22 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+02/02/2016 14:53:23 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+02/02/2016 14:53:23 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+02/02/2016 14:53:23 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@36cc176d: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 14:53:23 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+02/02/2016 14:53:23 INFO  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@36cc176d: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 14:53:23 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'deleteBBDD': Cannot resolve reference to bean 'TaskDeleteBBDD' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TaskDeleteBBDD': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.template.dao.impl.ApellidosDaoImpl com.template.negocio.TaskDeleteBBDD.apellidosDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No unique bean of type [com.template.dao.impl.ApellidosDaoImpl] is defined: expected single matching bean but found 2: [IApellidosDao, ApellidosDaoImpl]
+02/02/2016 14:53:23 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 14:53:23 INFO  - Ejecutado en 1 segundo, 271 milisisegundos
+02/02/2016 14:53:23 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+02/02/2016 14:55:45 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 14:55:45 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20b8db77: startup date [Tue Feb 02 14:55:45 CET 2016]; root of context hierarchy
+02/02/2016 14:55:45 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 14:55:46 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+02/02/2016 14:55:46 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+02/02/2016 14:55:46 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+02/02/2016 14:55:46 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@11161136: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 14:55:47 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+02/02/2016 14:55:47 INFO  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@11161136: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 14:55:47 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'deleteBBDD': Cannot resolve reference to bean 'TaskDeleteBBDD' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'TaskDeleteBBDD': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.template.dao.impl.ApellidosDaoImpl com.template.negocio.TaskDeleteBBDD.apellidosDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No matching bean of type [com.template.dao.impl.ApellidosDaoImpl] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=ApellidosDao)}
+02/02/2016 14:55:47 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 14:55:47 INFO  - Ejecutado en 1 segundo, 318 milisisegundos
+02/02/2016 14:55:47 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+02/02/2016 14:57:46 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 14:57:46 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@388cc09a: startup date [Tue Feb 02 14:57:46 CET 2016]; root of context hierarchy
+02/02/2016 14:57:46 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 14:57:46 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+02/02/2016 14:57:46 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+02/02/2016 14:57:46 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+02/02/2016 14:57:46 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@36cc176d: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 14:57:47 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+02/02/2016 14:57:47 INFO  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@36cc176d: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 14:57:47 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'insertaTemplate': Cannot resolve reference to bean 'itemWriter' while setting bean property 'itemWriter'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemWriter': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.template.dao.impl.ApellidosDaoImpl com.template.negocio.ServicioWriter.apellidosDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No unique bean of type [com.template.dao.impl.ApellidosDaoImpl] is defined: expected single matching bean but found 2: [IApellidosDao, ApellidosDaoImpl]
+02/02/2016 14:57:47 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 14:57:47 INFO  - Ejecutado en 1 segundo, 336 milisisegundos
+02/02/2016 14:57:47 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+02/02/2016 14:59:46 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 14:59:46 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20b8db77: startup date [Tue Feb 02 14:59:46 CET 2016]; root of context hierarchy
+02/02/2016 14:59:46 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 14:59:47 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+02/02/2016 14:59:47 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+02/02/2016 14:59:47 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+02/02/2016 14:59:47 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6a1b8d17: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 14:59:48 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+02/02/2016 14:59:48 INFO  Initializing ExecutorService  'taskExecutor'
+02/02/2016 14:59:48 INFO  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6a1b8d17: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 14:59:48 INFO  Shutting down ExecutorService 'taskExecutor'
+02/02/2016 14:59:48 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jobExplorer' defined in class path resource [META-INF/applicationDataSources.xml]: Cannot resolve reference to bean 'dataSourceTempalte' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'dataSourceTempalte' is defined
+02/02/2016 14:59:48 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 14:59:48 INFO  - Ejecutado en 1 segundo, 596 milisisegundos
+02/02/2016 14:59:48 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+02/02/2016 15:01:04 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 15:01:04 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@48507269: startup date [Tue Feb 02 15:01:04 CET 2016]; root of context hierarchy
+02/02/2016 15:01:04 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 15:01:04 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+02/02/2016 15:01:04 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+02/02/2016 15:01:04 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+02/02/2016 15:01:04 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@11161136: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 15:01:05 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+02/02/2016 15:01:05 INFO  Initializing ExecutorService  'taskExecutor'
+02/02/2016 15:01:05 INFO  templateSpringBatch v01.00 (29/10/2015)
+02/02/2016 15:01:05 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+02/02/2016 15:01:05 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:01:06 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:240)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:127)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:202)
+	... 20 more
+Caused by: java.sql.SQLException: ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:283)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:278)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.receiveOauth(T4CTTIoauthenticate.java:785)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:362)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 23 more
+02/02/2016 15:01:06 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:01:06 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:01:06 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:240)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:127)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:202)
+	... 20 more
+Caused by: java.sql.SQLException: ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:283)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:278)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.receiveOauth(T4CTTIoauthenticate.java:785)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:362)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 23 more
+02/02/2016 15:01:06 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:01:06 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:01:06 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:240)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:127)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:202)
+	... 20 more
+Caused by: java.sql.SQLException: ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:283)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:278)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.receiveOauth(T4CTTIoauthenticate.java:785)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:362)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 23 more
+02/02/2016 15:01:06 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:01:06 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:01:06 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:240)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:127)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:202)
+	... 20 more
+Caused by: java.sql.SQLException: ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:283)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:278)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.receiveOauth(T4CTTIoauthenticate.java:785)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:362)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 23 more
+02/02/2016 15:01:06 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:01:06 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:01:06 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:240)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:127)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:202)
+	... 20 more
+Caused by: java.sql.SQLException: ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:283)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:278)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.receiveOauth(T4CTTIoauthenticate.java:785)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:362)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 23 more
+02/02/2016 15:01:06 INFO  Executing step: [fin]
+02/02/2016 15:01:06 ERROR Encountered an error executing step fin in job cargaTemplate
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:240)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:127)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:202)
+	... 20 more
+Caused by: java.sql.SQLException: ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:283)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:278)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.receiveOauth(T4CTTIoauthenticate.java:785)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:362)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 23 more
+02/02/2016 15:01:06 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [FAILED]
+02/02/2016 15:01:06 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 15:01:06 INFO  - Ejecutado en 2 segundos, 706 milisisegundos
+02/02/2016 15:01:06 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+02/02/2016 15:26:39 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 15:26:39 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20b8db77: startup date [Tue Feb 02 15:26:39 CET 2016]; root of context hierarchy
+02/02/2016 15:26:39 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 15:26:40 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+02/02/2016 15:26:40 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+02/02/2016 15:26:40 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+02/02/2016 15:26:40 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4306404c: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 15:26:40 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+02/02/2016 15:26:40 INFO  Initializing ExecutorService  'taskExecutor'
+02/02/2016 15:26:41 INFO  templateSpringBatch v01.00 (29/10/2015)
+02/02/2016 15:26:41 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+02/02/2016 15:26:41 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:26:41 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.mysql.jdbc.Driver'
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:240)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:127)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.mysql.jdbc.Driver'
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1429)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1371)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:202)
+	... 20 more
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1420)
+	... 23 more
+02/02/2016 15:26:41 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:26:41 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:26:41 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.mysql.jdbc.Driver'
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:240)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:127)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.mysql.jdbc.Driver'
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1429)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1371)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:202)
+	... 20 more
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1420)
+	... 23 more
+02/02/2016 15:26:41 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:26:41 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:26:41 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.mysql.jdbc.Driver'
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:240)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:127)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.mysql.jdbc.Driver'
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1429)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1371)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:202)
+	... 20 more
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1420)
+	... 23 more
+02/02/2016 15:26:41 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:26:41 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:26:41 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.mysql.jdbc.Driver'
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:240)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:127)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.mysql.jdbc.Driver'
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1429)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1371)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:202)
+	... 20 more
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1420)
+	... 23 more
+02/02/2016 15:26:41 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:26:41 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:26:41 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.mysql.jdbc.Driver'
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:240)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:127)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.mysql.jdbc.Driver'
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1429)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1371)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:202)
+	... 20 more
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1420)
+	... 23 more
+02/02/2016 15:26:41 INFO  Executing step: [fin]
+02/02/2016 15:26:41 ERROR Encountered an error executing step fin in job cargaTemplate
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.mysql.jdbc.Driver'
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:240)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:127)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot load JDBC driver class 'com.mysql.jdbc.Driver'
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1429)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1371)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:202)
+	... 20 more
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at org.apache.commons.dbcp.BasicDataSource.createConnectionFactory(BasicDataSource.java:1420)
+	... 23 more
+02/02/2016 15:26:41 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [FAILED]
+02/02/2016 15:26:41 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 15:26:41 INFO  - Ejecutado en 2 segundos, 312 milisisegundos
+02/02/2016 15:26:41 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+02/02/2016 15:28:35 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 15:28:35 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@48507269: startup date [Tue Feb 02 15:28:35 CET 2016]; root of context hierarchy
+02/02/2016 15:28:35 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 15:28:35 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+02/02/2016 15:28:36 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+02/02/2016 15:28:36 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+02/02/2016 15:28:36 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5b0fcabf: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 15:28:36 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+02/02/2016 15:28:36 INFO  Initializing ExecutorService  'taskExecutor'
+02/02/2016 15:28:36 INFO  templateSpringBatch v01.00 (29/10/2015)
+02/02/2016 15:28:37 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+02/02/2016 15:28:37 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:28:37 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+02/02/2016 15:28:40 ERROR El fichero  no se ha podido descargar.java.net.UnknownHostException: XX.XX.X.XX
+02/02/2016 15:28:40 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+java.lang.Exception: java.net.UnknownHostException: XX.XX.X.XX
+	at com.template.util.Ftp.conecta(Ftp.java:79)
+	at com.template.negocio.TaskAccesoFTP.execute(TaskAccesoFTP.java:58)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: java.net.UnknownHostException: XX.XX.X.XX
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at com.enterprisedt.util.proxy.PlainSocket.createPlainSocket(PlainSocket.java:112)
+	at com.enterprisedt.util.proxy.StreamSocketFactory.getConnectedSocket(StreamSocketFactory.java:68)
+	at com.enterprisedt.net.ftp.pro.ProFTPClient.connect(ProFTPClient.java:198)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.connect(ConnectTask.java:154)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.run(ConnectTask.java:216)
+	at com.enterprisedt.net.ftp.async.internal.FTPTaskProcessor$b.run(FTPTaskProcessor.java:590)
+02/02/2016 15:28:40 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:28:40 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:28:40 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+02/02/2016 15:28:40 ERROR El fichero  no se ha podido descargar.java.net.UnknownHostException: XX.XX.X.XX
+02/02/2016 15:28:40 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+java.lang.Exception: java.net.UnknownHostException: XX.XX.X.XX
+	at com.template.util.Ftp.conecta(Ftp.java:79)
+	at com.template.negocio.TaskAccesoFTP.execute(TaskAccesoFTP.java:58)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: java.net.UnknownHostException: XX.XX.X.XX
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at com.enterprisedt.util.proxy.PlainSocket.createPlainSocket(PlainSocket.java:112)
+	at com.enterprisedt.util.proxy.StreamSocketFactory.getConnectedSocket(StreamSocketFactory.java:68)
+	at com.enterprisedt.net.ftp.pro.ProFTPClient.connect(ProFTPClient.java:198)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.connect(ConnectTask.java:154)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.run(ConnectTask.java:216)
+	at com.enterprisedt.net.ftp.async.internal.FTPTaskProcessor$b.run(FTPTaskProcessor.java:590)
+02/02/2016 15:28:40 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:28:40 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:28:40 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+02/02/2016 15:28:40 ERROR El fichero  no se ha podido descargar.java.net.UnknownHostException: XX.XX.X.XX
+02/02/2016 15:28:40 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+java.lang.Exception: java.net.UnknownHostException: XX.XX.X.XX
+	at com.template.util.Ftp.conecta(Ftp.java:79)
+	at com.template.negocio.TaskAccesoFTP.execute(TaskAccesoFTP.java:58)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: java.net.UnknownHostException: XX.XX.X.XX
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at com.enterprisedt.util.proxy.PlainSocket.createPlainSocket(PlainSocket.java:112)
+	at com.enterprisedt.util.proxy.StreamSocketFactory.getConnectedSocket(StreamSocketFactory.java:68)
+	at com.enterprisedt.net.ftp.pro.ProFTPClient.connect(ProFTPClient.java:198)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.connect(ConnectTask.java:154)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.run(ConnectTask.java:216)
+	at com.enterprisedt.net.ftp.async.internal.FTPTaskProcessor$b.run(FTPTaskProcessor.java:590)
+02/02/2016 15:28:40 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:28:40 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:28:40 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+02/02/2016 15:28:40 ERROR El fichero  no se ha podido descargar.java.net.UnknownHostException: XX.XX.X.XX
+02/02/2016 15:28:40 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+java.lang.Exception: java.net.UnknownHostException: XX.XX.X.XX
+	at com.template.util.Ftp.conecta(Ftp.java:79)
+	at com.template.negocio.TaskAccesoFTP.execute(TaskAccesoFTP.java:58)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: java.net.UnknownHostException: XX.XX.X.XX
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at com.enterprisedt.util.proxy.PlainSocket.createPlainSocket(PlainSocket.java:112)
+	at com.enterprisedt.util.proxy.StreamSocketFactory.getConnectedSocket(StreamSocketFactory.java:68)
+	at com.enterprisedt.net.ftp.pro.ProFTPClient.connect(ProFTPClient.java:198)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.connect(ConnectTask.java:154)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.run(ConnectTask.java:216)
+	at com.enterprisedt.net.ftp.async.internal.FTPTaskProcessor$b.run(FTPTaskProcessor.java:590)
+02/02/2016 15:28:40 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:28:40 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:28:40 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+02/02/2016 15:28:40 ERROR El fichero  no se ha podido descargar.java.net.UnknownHostException: XX.XX.X.XX
+02/02/2016 15:28:40 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+java.lang.Exception: java.net.UnknownHostException: XX.XX.X.XX
+	at com.template.util.Ftp.conecta(Ftp.java:79)
+	at com.template.negocio.TaskAccesoFTP.execute(TaskAccesoFTP.java:58)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: java.net.UnknownHostException: XX.XX.X.XX
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at com.enterprisedt.util.proxy.PlainSocket.createPlainSocket(PlainSocket.java:112)
+	at com.enterprisedt.util.proxy.StreamSocketFactory.getConnectedSocket(StreamSocketFactory.java:68)
+	at com.enterprisedt.net.ftp.pro.ProFTPClient.connect(ProFTPClient.java:198)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.connect(ConnectTask.java:154)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.run(ConnectTask.java:216)
+	at com.enterprisedt.net.ftp.async.internal.FTPTaskProcessor$b.run(FTPTaskProcessor.java:590)
+02/02/2016 15:28:40 INFO  Executing step: [fin]
+02/02/2016 15:28:40 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [COMPLETED]
+02/02/2016 15:28:40 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 15:28:40 INFO  - Ejecutado en 5 segundos, 344 milisisegundos
+02/02/2016 15:28:40 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+02/02/2016 15:30:35 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 15:30:35 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19877096: startup date [Tue Feb 02 15:30:35 CET 2016]; root of context hierarchy
+02/02/2016 15:30:35 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 15:30:35 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+02/02/2016 15:30:35 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+02/02/2016 15:30:35 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+02/02/2016 15:30:35 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5b0fcabf: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 15:30:36 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+02/02/2016 15:30:36 INFO  Initializing ExecutorService  'taskExecutor'
+02/02/2016 15:30:36 INFO  templateSpringBatch v01.00 (29/10/2015)
+02/02/2016 15:30:36 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+02/02/2016 15:30:36 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:30:37 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+02/02/2016 15:30:58 ERROR El fichero  no se ha podido descargar.java.net.ConnectException: Connection timed out: connect
+02/02/2016 15:30:58 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+java.lang.Exception: java.net.ConnectException: Connection timed out: connect
+	at com.template.util.Ftp.conecta(Ftp.java:79)
+	at com.template.negocio.TaskAccesoFTP.execute(TaskAccesoFTP.java:58)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at com.enterprisedt.util.proxy.PlainSocket.createPlainSocket(PlainSocket.java:112)
+	at com.enterprisedt.util.proxy.StreamSocketFactory.getConnectedSocket(StreamSocketFactory.java:68)
+	at com.enterprisedt.net.ftp.pro.ProFTPClient.connect(ProFTPClient.java:198)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.connect(ConnectTask.java:154)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.run(ConnectTask.java:216)
+	at com.enterprisedt.net.ftp.async.internal.FTPTaskProcessor$b.run(FTPTaskProcessor.java:590)
+02/02/2016 15:30:58 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:30:58 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:30:58 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+02/02/2016 15:31:19 ERROR El fichero  no se ha podido descargar.java.net.ConnectException: Connection timed out: connect
+02/02/2016 15:31:19 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+java.lang.Exception: java.net.ConnectException: Connection timed out: connect
+	at com.template.util.Ftp.conecta(Ftp.java:79)
+	at com.template.negocio.TaskAccesoFTP.execute(TaskAccesoFTP.java:58)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at com.enterprisedt.util.proxy.PlainSocket.createPlainSocket(PlainSocket.java:112)
+	at com.enterprisedt.util.proxy.StreamSocketFactory.getConnectedSocket(StreamSocketFactory.java:68)
+	at com.enterprisedt.net.ftp.pro.ProFTPClient.connect(ProFTPClient.java:198)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.connect(ConnectTask.java:154)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.run(ConnectTask.java:216)
+	at com.enterprisedt.net.ftp.async.internal.FTPTaskProcessor$b.run(FTPTaskProcessor.java:590)
+02/02/2016 15:31:19 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:31:19 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:31:19 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+02/02/2016 15:31:40 ERROR El fichero  no se ha podido descargar.java.net.ConnectException: Connection timed out: connect
+02/02/2016 15:31:40 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+java.lang.Exception: java.net.ConnectException: Connection timed out: connect
+	at com.template.util.Ftp.conecta(Ftp.java:79)
+	at com.template.negocio.TaskAccesoFTP.execute(TaskAccesoFTP.java:58)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at com.enterprisedt.util.proxy.PlainSocket.createPlainSocket(PlainSocket.java:112)
+	at com.enterprisedt.util.proxy.StreamSocketFactory.getConnectedSocket(StreamSocketFactory.java:68)
+	at com.enterprisedt.net.ftp.pro.ProFTPClient.connect(ProFTPClient.java:198)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.connect(ConnectTask.java:154)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.run(ConnectTask.java:216)
+	at com.enterprisedt.net.ftp.async.internal.FTPTaskProcessor$b.run(FTPTaskProcessor.java:590)
+02/02/2016 15:31:40 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:31:40 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:31:40 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+02/02/2016 15:32:01 ERROR El fichero  no se ha podido descargar.java.net.ConnectException: Connection timed out: connect
+02/02/2016 15:32:01 ERROR Encountered an error executing step AccesoFTP in job cargaTemplate
+java.lang.Exception: java.net.ConnectException: Connection timed out: connect
+	at com.template.util.Ftp.conecta(Ftp.java:79)
+	at com.template.negocio.TaskAccesoFTP.execute(TaskAccesoFTP.java:58)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at com.enterprisedt.util.proxy.PlainSocket.createPlainSocket(PlainSocket.java:112)
+	at com.enterprisedt.util.proxy.StreamSocketFactory.getConnectedSocket(StreamSocketFactory.java:68)
+	at com.enterprisedt.net.ftp.pro.ProFTPClient.connect(ProFTPClient.java:198)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.connect(ConnectTask.java:154)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.run(ConnectTask.java:216)
+	at com.enterprisedt.net.ftp.async.internal.FTPTaskProcessor$b.run(FTPTaskProcessor.java:590)
+02/02/2016 15:32:01 INFO  Duplicate step [AccesoFTP] detected in execution of job=[cargaTemplate]. If either step fails, both will be executed again on restart.
+02/02/2016 15:32:02 INFO  Executing step: [AccesoFTP]
+02/02/2016 15:32:02 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+02/02/2016 15:35:27 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 15:35:27 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@48507269: startup date [Tue Feb 02 15:35:27 CET 2016]; root of context hierarchy
+02/02/2016 15:35:27 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 15:35:27 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+02/02/2016 15:35:28 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+02/02/2016 15:35:28 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+02/02/2016 15:35:28 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4571857c: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 15:35:28 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+02/02/2016 15:35:28 INFO  Initializing ExecutorService  'taskExecutor'
+02/02/2016 15:35:28 INFO  templateSpringBatch v01.00 (29/10/2015)
+02/02/2016 15:35:29 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+02/02/2016 15:35:29 INFO  Executing step: [descomprimirFichero]
+02/02/2016 15:35:29 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+02/02/2016 15:35:29 WARN  No encontrado fichero para descomprimir
+02/02/2016 15:35:29 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+02/02/2016 15:35:29 INFO  Executing step: [deleteBBDD]
+02/02/2016 15:35:29 INFO  ================== INICIO BORRADO BBDD  ================== 
+02/02/2016 15:35:29 INFO  Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+02/02/2016 15:35:29 INFO  SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+02/02/2016 15:35:29 ERROR Error borrando la tabla 
+02/02/2016 15:35:29 INFO  ================== FIN BORRADO BBDD   ================== 
+
+02/02/2016 15:35:29 INFO  Executing step: [insertaTemplate]
+02/02/2016 15:35:29 WARN  No resources to read. Set strict=true if this should be an error condition.
+02/02/2016 15:35:29 INFO  Executing step: [deleteFTPFiles]
+02/02/2016 15:35:29 INFO  ================== INICIO TAREA BORRADO FTP FICHEROS   ================== 
+02/02/2016 15:35:29 INFO  Se realiza conexion al FTP
+02/02/2016 15:35:51 ERROR El fichero  no se ha podido borrar del FTP.java.net.ConnectException: Connection timed out: connect
+02/02/2016 15:35:51 INFO  Se realiza desconexion del FTP
+02/02/2016 15:35:51 ERROR Encountered an error executing step deleteFTPFiles in job cargaTemplate
+java.lang.Exception: java.net.ConnectException: Connection timed out: connect
+	at com.template.util.Ftp.conecta(Ftp.java:79)
+	at com.template.negocio.TaskDeleteFTPFiles.execute(TaskDeleteFTPFiles.java:58)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:134)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:306)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:128)
+	at com.template.Inicio.main(Inicio.java:48)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at com.enterprisedt.util.proxy.PlainSocket.createPlainSocket(PlainSocket.java:112)
+	at com.enterprisedt.util.proxy.StreamSocketFactory.getConnectedSocket(StreamSocketFactory.java:68)
+	at com.enterprisedt.net.ftp.pro.ProFTPClient.connect(ProFTPClient.java:198)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.connect(ConnectTask.java:154)
+	at com.enterprisedt.net.ftp.async.internal.ConnectTask.run(ConnectTask.java:216)
+	at com.enterprisedt.net.ftp.async.internal.FTPTaskProcessor$b.run(FTPTaskProcessor.java:590)
+02/02/2016 15:35:51 INFO  Executing step: [fin]
+02/02/2016 15:35:51 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [COMPLETED]
+02/02/2016 15:35:51 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 15:35:51 INFO  - Ejecutado en 23 segundos, 874 milisisegundos
+02/02/2016 15:35:51 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+02/02/2016 15:36:55 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+02/02/2016 15:36:55 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@55936c40: startup date [Tue Feb 02 15:36:55 CET 2016]; root of context hierarchy
+02/02/2016 15:36:55 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+02/02/2016 15:36:56 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+02/02/2016 15:36:56 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+02/02/2016 15:36:56 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+02/02/2016 15:36:56 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@20d417bd: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+02/02/2016 15:36:56 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+02/02/2016 15:36:57 INFO  Initializing ExecutorService  'taskExecutor'
+02/02/2016 15:36:57 INFO  templateSpringBatch v01.00 (29/10/2015)
+02/02/2016 15:36:57 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+02/02/2016 15:36:57 INFO  Executing step: [descomprimirFichero]
+02/02/2016 15:36:58 INFO  ================== INICIO TAREA UNZIPFILES   ================== 

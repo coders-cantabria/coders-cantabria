@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig
+    PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN"
+    "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
+<sqlMapConfig>
+    <!-- Fichero properties con configuración de BBDD y maps para SqlMapConfig -->
+    <properties resource="config/template/cfg/SqlMapConfig.properties" />
+    <settings
+        cacheModelsEnabled="true"
+        enhancementEnabled="true"
+        lazyLoadingEnabled="true"
+        maxRequests="32"
+        maxSessions="10"
+        maxTransactions="5"
+        useStatementNamespaces="false"
+    />
+    <!-- Esquema -->    
+   <sqlMap resource="ibatis/maps/querys.xml" />
+   
+    
+</sqlMapConfig>

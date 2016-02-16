@@ -1,0 +1,1326 @@
+03/02/2016 16:52:31 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 16:52:31 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19877096: startup date [Wed Feb 03 16:52:31 CET 2016]; root of context hierarchy
+03/02/2016 16:52:32 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 16:52:32 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 16:52:32 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 16:52:32 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 16:52:32 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@69c7f04d: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 16:52:33 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 16:52:33 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 16:52:33 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 16:52:33 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 16:52:33 INFO  Executing step: [descomprimirFichero]
+03/02/2016 16:52:34 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 16:52:34 INFO  Descomprimiendo fichero zip extraccion_apellidos_ine.zip
+03/02/2016 16:52:34 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 16:52:34 INFO  Executing step: [deleteBBDD]
+03/02/2016 16:52:34 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 16:52:34 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 16:52:34 INFO  Executing step: [insertaTemplate]
+03/02/2016 16:52:34 WARN  No resources to read. Set strict=true if this should be an error condition.
+03/02/2016 16:52:34 INFO  Executing step: [deleteFTPFiles]
+03/02/2016 16:52:34 INFO  ================== INICIO TAREA BORRADO FTP FICHEROS   ================== 
+03/02/2016 16:52:34 INFO  Se realiza conexion al FTP
+03/02/2016 16:52:34 INFO  ================== FIN TAREA BORRADO FTP FICHEROS  ================== 
+
+03/02/2016 16:52:34 INFO  Executing step: [deleteLocalFiles]
+03/02/2016 16:52:34 INFO  ================== INICIO BORRADO CSV EN CARPETA LOCAL  ================== 
+03/02/2016 16:52:34 INFO  Borrado fichero de la carpeta local
+03/02/2016 16:52:34 INFO  Borrado fichero de la carpeta local
+03/02/2016 16:52:34 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 16:52:34 INFO  Executing step: [fin]
+03/02/2016 16:52:34 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [COMPLETED]
+03/02/2016 16:52:34 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 16:52:34 INFO  - Ejecutado en 3 segundos, 51 milisisegundos
+03/02/2016 16:52:34 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+03/02/2016 16:53:10 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 16:53:10 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19877096: startup date [Wed Feb 03 16:53:10 CET 2016]; root of context hierarchy
+03/02/2016 16:53:10 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 16:53:11 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 16:53:11 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 16:53:11 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 16:53:11 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3fc3f8fd: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 16:53:12 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 16:53:12 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 16:53:12 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 16:53:12 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 16:53:12 INFO  Executing step: [descomprimirFichero]
+03/02/2016 16:53:12 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 16:53:12 INFO  Descomprimiendo fichero zip extraccion_apellidos_ine.zip
+03/02/2016 16:53:12 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 16:53:13 INFO  Executing step: [deleteBBDD]
+03/02/2016 16:53:13 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 16:53:13 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 16:53:13 INFO  Executing step: [insertaTemplate]
+03/02/2016 16:53:13 WARN  No resources to read. Set strict=true if this should be an error condition.
+03/02/2016 16:53:13 INFO  Executing step: [deleteFTPFiles]
+03/02/2016 16:53:13 INFO  ================== INICIO TAREA BORRADO FTP FICHEROS   ================== 
+03/02/2016 16:53:13 INFO  Se realiza conexion al FTP
+03/02/2016 16:53:13 INFO  ================== FIN TAREA BORRADO FTP FICHEROS  ================== 
+
+03/02/2016 16:53:13 INFO  Executing step: [deleteLocalFiles]
+03/02/2016 16:53:13 INFO  ================== INICIO BORRADO CSV EN CARPETA LOCAL  ================== 
+03/02/2016 16:53:13 INFO  Borrado fichero de la carpeta local
+03/02/2016 16:53:13 INFO  Borrado fichero de la carpeta local
+03/02/2016 16:53:13 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 16:53:13 INFO  Executing step: [fin]
+03/02/2016 16:53:13 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [COMPLETED]
+03/02/2016 16:53:13 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 16:53:13 INFO  - Ejecutado en 2 segundos, 723 milisisegundos
+03/02/2016 16:53:13 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+03/02/2016 16:54:25 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 16:54:25 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19877096: startup date [Wed Feb 03 16:54:25 CET 2016]; root of context hierarchy
+03/02/2016 16:54:25 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 16:54:25 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 16:54:25 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 16:54:25 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 16:54:25 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3fc3f8fd: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 16:54:26 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 16:54:26 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 16:54:26 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 16:54:26 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 16:54:26 INFO  Executing step: [AccesoFTP]
+03/02/2016 16:54:27 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+03/02/2016 16:54:27 INFO  Conectado correctamente al FTP.
+03/02/2016 16:54:29 INFO  Descargado fichero a ./ficheros/extraccion_medida.zip
+03/02/2016 16:54:31 INFO  ================== FIN TAREA ACCESO Y DESCARGA FTP   ================== 
+
+03/02/2016 16:54:31 INFO  Executing step: [descomprimirFichero]
+03/02/2016 16:54:31 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 16:54:31 INFO  Descomprimiendo fichero zip extraccion_medida.zip
+03/02/2016 16:54:31 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 16:54:31 INFO  Executing step: [deleteBBDD]
+03/02/2016 16:54:31 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 16:54:31 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 16:54:31 INFO  Executing step: [insertaTemplate]
+03/02/2016 16:54:31 WARN  No resources to read. Set strict=true if this should be an error condition.
+03/02/2016 16:54:31 INFO  Executing step: [deleteFTPFiles]
+03/02/2016 16:54:31 INFO  ================== INICIO TAREA BORRADO FTP FICHEROS   ================== 
+03/02/2016 16:54:31 INFO  Se realiza conexion al FTP
+03/02/2016 16:54:31 INFO  ================== FIN TAREA BORRADO FTP FICHEROS  ================== 
+
+03/02/2016 16:54:31 INFO  Executing step: [deleteLocalFiles]
+03/02/2016 16:54:31 INFO  ================== INICIO BORRADO CSV EN CARPETA LOCAL  ================== 
+03/02/2016 16:54:31 INFO  Borrado fichero de la carpeta local
+03/02/2016 16:54:31 INFO  Borrado fichero de la carpeta local
+03/02/2016 16:54:31 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 16:54:31 INFO  Executing step: [fin]
+03/02/2016 16:54:31 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [COMPLETED]
+03/02/2016 16:54:31 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 16:54:31 INFO  - Ejecutado en 6 segundos, 805 milisisegundos
+03/02/2016 16:54:31 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+03/02/2016 16:55:35 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 16:55:35 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@48507269: startup date [Wed Feb 03 16:55:35 CET 2016]; root of context hierarchy
+03/02/2016 16:55:35 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 16:55:36 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 16:55:36 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 16:55:36 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 16:55:36 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5b0fcabf: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 16:55:37 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 16:55:37 INFO  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5b0fcabf: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 16:55:37 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'insertaTemplate': Cannot resolve reference to bean 'itemReader' while setting bean property 'itemReader'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemReader' defined in class path resource [META-INF/applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'resources'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:./ficheros/*.csv]: class path resource [ficheros/] cannot be resolved to URL because it does not exist
+03/02/2016 16:55:37 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 16:55:37 INFO  - Ejecutado en 1 segundo, 364 milisisegundos
+03/02/2016 16:55:37 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+03/02/2016 16:57:18 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 16:57:18 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19877096: startup date [Wed Feb 03 16:57:18 CET 2016]; root of context hierarchy
+03/02/2016 16:57:19 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 16:57:19 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 16:57:19 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 16:57:19 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 16:57:19 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@11161136: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 16:57:20 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 16:57:20 INFO  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@11161136: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 16:57:20 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'insertaTemplate': Cannot resolve reference to bean 'itemReader' while setting bean property 'itemReader'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemReader' defined in class path resource [META-INF/applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'resources'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [./ficheros/*.csv]: class path resource [ficheros/] cannot be resolved to URL because it does not exist
+03/02/2016 16:57:20 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 16:57:20 INFO  - Ejecutado en 1 segundo, 389 milisisegundos
+03/02/2016 16:57:20 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+03/02/2016 17:40:05 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:40:05 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@48507269: startup date [Wed Feb 03 17:40:05 CET 2016]; root of context hierarchy
+03/02/2016 17:40:06 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 17:40:06 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 17:40:06 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 17:40:06 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 17:40:06 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3fc3f8fd: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 17:40:07 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 17:40:07 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 17:40:07 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 17:40:07 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 17:40:07 INFO  Executing step: [AccesoFTP]
+03/02/2016 17:40:08 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+03/02/2016 17:40:08 INFO  Conectado correctamente al FTP.
+03/02/2016 17:40:10 INFO  Descargado fichero a ./ficheros/extraccion_medida.zip
+03/02/2016 17:40:11 INFO  ================== FIN TAREA ACCESO Y DESCARGA FTP   ================== 
+
+03/02/2016 17:40:12 INFO  Executing step: [descomprimirFichero]
+03/02/2016 17:40:12 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 17:40:12 INFO  Descomprimiendo fichero zip extraccion_medida.zip
+03/02/2016 17:40:12 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 17:40:12 INFO  Executing step: [deleteBBDD]
+03/02/2016 17:40:12 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 17:40:12 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 17:40:12 INFO  Executing step: [insertaTemplate]
+03/02/2016 17:40:12 WARN  No resources to read. Set strict=true if this should be an error condition.
+03/02/2016 17:40:12 INFO  Executing step: [deleteFTPFiles]
+03/02/2016 17:40:12 INFO  ================== INICIO TAREA BORRADO FTP FICHEROS   ================== 
+03/02/2016 17:40:12 INFO  Se realiza conexion al FTP
+03/02/2016 17:40:12 INFO  ================== FIN TAREA BORRADO FTP FICHEROS  ================== 
+
+03/02/2016 17:40:12 INFO  Executing step: [deleteLocalFiles]
+03/02/2016 17:40:12 INFO  ================== INICIO BORRADO CSV EN CARPETA LOCAL  ================== 
+03/02/2016 17:40:12 INFO  Borrado fichero de la carpeta local
+03/02/2016 17:40:12 INFO  Borrado fichero de la carpeta local
+03/02/2016 17:40:12 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 17:40:12 INFO  Executing step: [fin]
+03/02/2016 17:40:12 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [COMPLETED]
+03/02/2016 17:40:12 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:40:12 INFO  - Ejecutado en 6 segundos, 831 milisisegundos
+03/02/2016 17:40:12 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+03/02/2016 17:41:28 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:41:28 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7f110fa8: startup date [Wed Feb 03 17:41:28 CET 2016]; root of context hierarchy
+03/02/2016 17:41:28 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 17:41:28 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 17:41:29 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 17:41:29 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 17:41:29 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7d984acb: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 17:41:29 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 17:41:29 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 17:41:30 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 17:41:30 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 17:41:30 INFO  Executing step: [AccesoFTP]
+03/02/2016 17:41:30 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+03/02/2016 17:41:31 INFO  Conectado correctamente al FTP.
+03/02/2016 17:41:32 INFO  Descargado fichero a ./ficheros/extraccion_medida.zip
+03/02/2016 17:41:33 INFO  ================== FIN TAREA ACCESO Y DESCARGA FTP   ================== 
+
+03/02/2016 17:41:33 INFO  Executing step: [descomprimirFichero]
+03/02/2016 17:41:33 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 17:43:01 INFO  Descomprimiendo fichero zip extraccion_medida.zip
+03/02/2016 17:43:04 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 17:43:17 INFO  Executing step: [deleteBBDD]
+03/02/2016 17:43:17 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 17:43:17 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 17:43:18 INFO  Executing step: [insertaTemplate]
+03/02/2016 17:43:18 WARN  No resources to read. Set strict=true if this should be an error condition.
+03/02/2016 17:43:18 INFO  Executing step: [deleteFTPFiles]
+03/02/2016 17:43:18 INFO  ================== INICIO TAREA BORRADO FTP FICHEROS   ================== 
+03/02/2016 17:43:18 INFO  Se realiza conexion al FTP
+03/02/2016 17:43:18 INFO  ================== FIN TAREA BORRADO FTP FICHEROS  ================== 
+
+03/02/2016 17:43:18 INFO  Executing step: [deleteLocalFiles]
+03/02/2016 17:43:18 INFO  ================== INICIO BORRADO CSV EN CARPETA LOCAL  ================== 
+03/02/2016 17:43:18 INFO  Borrado fichero de la carpeta local
+03/02/2016 17:43:18 INFO  Borrado fichero de la carpeta local
+03/02/2016 17:43:18 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 17:43:18 INFO  Executing step: [fin]
+03/02/2016 17:43:18 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [COMPLETED]
+03/02/2016 17:43:18 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:43:18 INFO  - Ejecutado en 1 minuto, 50 segundos, 388 milisisegundos
+03/02/2016 17:43:18 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+03/02/2016 17:45:23 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:45:23 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@41a809a4: startup date [Wed Feb 03 17:45:23 CET 2016]; root of context hierarchy
+03/02/2016 17:45:23 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 17:45:24 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 17:45:24 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 17:45:24 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 17:45:24 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7648ba9e: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 17:45:24 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 17:45:25 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 17:45:25 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 17:45:25 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 17:45:25 INFO  Executing step: [AccesoFTP]
+03/02/2016 17:45:26 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+03/02/2016 17:45:26 INFO  Conectado correctamente al FTP.
+03/02/2016 17:45:27 INFO  Descargado fichero a ./ficheros/extraccion_medida.zip
+03/02/2016 17:45:29 INFO  ================== FIN TAREA ACCESO Y DESCARGA FTP   ================== 
+
+03/02/2016 17:45:29 INFO  Executing step: [descomprimirFichero]
+03/02/2016 17:45:29 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 17:45:33 INFO  Descomprimiendo fichero zip extraccion_medida.zip
+03/02/2016 17:45:33 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 17:46:04 INFO  Executing step: [deleteBBDD]
+03/02/2016 17:46:04 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 17:46:04 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 17:46:05 INFO  Executing step: [insertaTemplate]
+03/02/2016 17:46:05 WARN  No resources to read. Set strict=true if this should be an error condition.
+03/02/2016 17:46:05 INFO  Executing step: [deleteFTPFiles]
+03/02/2016 17:46:05 INFO  ================== INICIO TAREA BORRADO FTP FICHEROS   ================== 
+03/02/2016 17:46:05 INFO  Se realiza conexion al FTP
+03/02/2016 17:46:05 INFO  ================== FIN TAREA BORRADO FTP FICHEROS  ================== 
+
+03/02/2016 17:46:06 INFO  Executing step: [deleteLocalFiles]
+03/02/2016 17:46:06 INFO  ================== INICIO BORRADO CSV EN CARPETA LOCAL  ================== 
+03/02/2016 17:46:06 INFO  Borrado fichero de la carpeta local
+03/02/2016 17:46:06 INFO  Borrado fichero de la carpeta local
+03/02/2016 17:46:06 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 17:46:07 INFO  Executing step: [fin]
+03/02/2016 17:46:07 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [COMPLETED]
+03/02/2016 17:49:09 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:49:10 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@41a809a4: startup date [Wed Feb 03 17:49:09 CET 2016]; root of context hierarchy
+03/02/2016 17:49:10 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 17:49:10 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 17:49:10 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 17:49:10 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 17:49:10 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7d984acb: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 17:49:11 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 17:49:11 INFO  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7d984acb: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 17:49:11 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'insertaTemplate': Cannot resolve reference to bean 'itemReader' while setting bean property 'itemReader'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemReader' defined in class path resource [META-INF/applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'resources'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [./ficheros/*.csv]: class path resource [ficheros/] cannot be resolved to URL because it does not exist
+03/02/2016 17:49:11 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:49:11 INFO  - Ejecutado en 1 segundo, 559 milisisegundos
+03/02/2016 17:49:11 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+03/02/2016 17:50:58 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:50:58 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7f110fa8: startup date [Wed Feb 03 17:50:58 CET 2016]; root of context hierarchy
+03/02/2016 17:50:58 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 17:50:58 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 17:50:59 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 17:50:59 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 17:50:59 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@215a9f9a: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 17:50:59 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 17:50:59 INFO  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@215a9f9a: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 17:50:59 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'insertaTemplate': Cannot resolve reference to bean 'itemReader' while setting bean property 'itemReader'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemReader' defined in class path resource [META-INF/applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'resources'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [./ficheros/*.csv]: class path resource [ficheros/] cannot be resolved to URL because it does not exist
+03/02/2016 17:50:59 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:50:59 INFO  - Ejecutado en 1 segundo, 547 milisisegundos
+03/02/2016 17:50:59 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+03/02/2016 17:52:03 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:52:03 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@55936c40: startup date [Wed Feb 03 17:52:03 CET 2016]; root of context hierarchy
+03/02/2016 17:52:03 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 17:52:04 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 17:52:04 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 17:52:04 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 17:52:04 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@44a44891: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 17:52:04 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 17:52:05 INFO  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@44a44891: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 17:52:05 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'insertaTemplate': Cannot resolve reference to bean 'itemReader' while setting bean property 'itemReader'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemReader' defined in class path resource [META-INF/applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'resources'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [./ficheros/*.csv]: class path resource [ficheros/] cannot be resolved to URL because it does not exist
+03/02/2016 17:52:05 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:52:05 INFO  - Ejecutado en 1 segundo, 513 milisisegundos
+03/02/2016 17:52:05 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+03/02/2016 17:56:28 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:56:28 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@48507269: startup date [Wed Feb 03 17:56:28 CET 2016]; root of context hierarchy
+03/02/2016 17:56:28 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 17:56:29 ERROR ---- Error proceso templateSpringBatch v01.00 (29/10/2015) ----
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Unexpected failure during bean definition parsing
+Offending resource: class path resource [META-INF/applicationContext.xml]
+Bean 'itemReader'; nested exception is org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Multiple 'property' definitions for property 'resources'
+Offending resource: class path resource [META-INF/applicationContext.xml]
+Bean 'itemReader'
+	-> Property 'resources'
+03/02/2016 17:56:29 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:56:29 INFO  - Ejecutado en 543 milisisegundos
+03/02/2016 17:56:29 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate MAL
+03/02/2016 17:58:15 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:58:16 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@391b1fc4: startup date [Wed Feb 03 17:58:16 CET 2016]; root of context hierarchy
+03/02/2016 17:58:16 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 17:58:16 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 17:58:16 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 17:58:16 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 17:58:16 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7d984acb: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 17:58:17 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 17:58:17 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 17:58:17 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 17:58:18 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 17:58:18 INFO  Executing step: [AccesoFTP]
+03/02/2016 17:58:18 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+03/02/2016 17:58:18 INFO  Conectado correctamente al FTP.
+03/02/2016 17:58:19 INFO  Descargado fichero a ./ficheros/extraccion_medida.zip
+03/02/2016 17:58:21 INFO  ================== FIN TAREA ACCESO Y DESCARGA FTP   ================== 
+
+03/02/2016 17:58:21 INFO  Executing step: [descomprimirFichero]
+03/02/2016 17:58:21 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 17:58:25 INFO  Descomprimiendo fichero zip extraccion_medida.zip
+03/02/2016 17:58:25 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 17:58:26 INFO  Executing step: [deleteBBDD]
+03/02/2016 17:58:26 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 17:58:26 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 17:58:26 INFO  Executing step: [insertaTemplate]
+03/02/2016 17:58:26 ERROR Encountered an error executing step insertaTemplate in job cargaTemplate
+org.springframework.batch.item.file.FlatFileParseException: Parsing error at line: 4 in resource=[URL [file:./ficheros/extraccion_apellidos_ine.csv]], input=[72815;517;BUJALDON;3;]
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:183)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:88)
+	at org.springframework.batch.item.file.MultiResourceItemReader.readFromDelegate(MultiResourceItemReader.java:140)
+	at org.springframework.batch.item.file.MultiResourceItemReader.readNextItem(MultiResourceItemReader.java:119)
+	at org.springframework.batch.item.file.MultiResourceItemReader.read(MultiResourceItemReader.java:108)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:91)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:157)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:116)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:110)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.TaskExecutorRepeatTemplate$ExecutingRunnable.run(TaskExecutorRepeatTemplate.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.springframework.batch.item.file.transform.IncorrectTokenCountException: Incorrect number of tokens found in record: expected 3 actual 5
+	at org.springframework.batch.item.file.transform.AbstractLineTokenizer.tokenize(AbstractLineTokenizer.java:125)
+	at org.springframework.batch.item.file.mapping.DefaultLineMapper.mapLine(DefaultLineMapper.java:43)
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:180)
+	... 21 more
+03/02/2016 17:58:26 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [FAILED]
+03/02/2016 17:58:26 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 17:58:26 INFO  - Ejecutado en 10 segundos, 468 milisisegundos
+03/02/2016 17:58:26 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+03/02/2016 18:02:51 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:02:51 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19877096: startup date [Wed Feb 03 18:02:51 CET 2016]; root of context hierarchy
+03/02/2016 18:02:51 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 18:02:52 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 18:02:52 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 18:02:52 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 18:02:52 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3fc3f8fd: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 18:02:52 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 18:02:52 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 18:02:53 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 18:02:53 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 18:02:53 INFO  Executing step: [AccesoFTP]
+03/02/2016 18:02:53 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+03/02/2016 18:02:54 INFO  Conectado correctamente al FTP.
+03/02/2016 18:02:56 INFO  Descargado fichero a ./ficheros/extraccion_medida.zip
+03/02/2016 18:02:57 INFO  ================== FIN TAREA ACCESO Y DESCARGA FTP   ================== 
+
+03/02/2016 18:02:57 INFO  Executing step: [descomprimirFichero]
+03/02/2016 18:02:57 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 18:02:57 INFO  Descomprimiendo fichero zip extraccion_medida.zip
+03/02/2016 18:02:57 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 18:02:57 INFO  Executing step: [deleteBBDD]
+03/02/2016 18:02:57 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 18:02:57 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 18:02:57 INFO  Executing step: [insertaTemplate]
+03/02/2016 18:02:58 ERROR Encountered an error executing step insertaTemplate in job cargaTemplate
+org.springframework.batch.item.file.FlatFileParseException: Parsing error at line: 1 in resource=[URL [file:./ficheros/extraccion_apellidos_ine.csv]], input=[72812;517;A ALZAID;0;]
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:183)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:88)
+	at org.springframework.batch.item.file.MultiResourceItemReader.readFromDelegate(MultiResourceItemReader.java:140)
+	at org.springframework.batch.item.file.MultiResourceItemReader.readNextItem(MultiResourceItemReader.java:119)
+	at org.springframework.batch.item.file.MultiResourceItemReader.read(MultiResourceItemReader.java:108)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:91)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:157)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:116)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:110)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.TaskExecutorRepeatTemplate$ExecutingRunnable.run(TaskExecutorRepeatTemplate.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.springframework.batch.item.file.transform.IncorrectTokenCountException: Incorrect number of tokens found in record: expected 4 actual 5
+	at org.springframework.batch.item.file.transform.AbstractLineTokenizer.tokenize(AbstractLineTokenizer.java:125)
+	at org.springframework.batch.item.file.mapping.DefaultLineMapper.mapLine(DefaultLineMapper.java:43)
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:180)
+	... 21 more
+03/02/2016 18:02:58 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [FAILED]
+03/02/2016 18:02:58 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:02:58 INFO  - Ejecutado en 6 segundos, 476 milisisegundos
+03/02/2016 18:02:58 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+03/02/2016 18:04:33 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:04:33 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19877096: startup date [Wed Feb 03 18:04:33 CET 2016]; root of context hierarchy
+03/02/2016 18:04:33 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 18:04:33 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 18:04:34 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 18:04:34 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 18:04:34 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3fc3f8fd: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 18:04:34 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 18:04:34 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 18:04:35 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 18:04:35 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 18:04:35 INFO  Executing step: [AccesoFTP]
+03/02/2016 18:04:35 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+03/02/2016 18:04:36 INFO  Conectado correctamente al FTP.
+03/02/2016 18:04:38 INFO  Descargado fichero a ./ficheros/extraccion_medida.zip
+03/02/2016 18:04:39 INFO  ================== FIN TAREA ACCESO Y DESCARGA FTP   ================== 
+
+03/02/2016 18:04:39 INFO  Executing step: [descomprimirFichero]
+03/02/2016 18:04:39 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 18:04:39 INFO  Descomprimiendo fichero zip extraccion_medida.zip
+03/02/2016 18:04:39 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 18:04:39 INFO  Executing step: [deleteBBDD]
+03/02/2016 18:04:39 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 18:04:39 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 18:04:39 INFO  Executing step: [insertaTemplate]
+03/02/2016 18:04:40 ERROR Encountered an error executing step insertaTemplate in job cargaTemplate
+org.springframework.batch.item.file.FlatFileParseException: Parsing error at line: 1 in resource=[URL [file:./ficheros/extraccion_apellidos_ine.csv]], input=[72812;517;A ALZAID;0;]
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:183)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:88)
+	at org.springframework.batch.item.file.MultiResourceItemReader.readFromDelegate(MultiResourceItemReader.java:140)
+	at org.springframework.batch.item.file.MultiResourceItemReader.readNextItem(MultiResourceItemReader.java:119)
+	at org.springframework.batch.item.file.MultiResourceItemReader.read(MultiResourceItemReader.java:108)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:91)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:157)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:116)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:374)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:110)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:271)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
+	at org.springframework.batch.repeat.support.TaskExecutorRepeatTemplate$ExecutingRunnable.run(TaskExecutorRepeatTemplate.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.springframework.batch.item.file.transform.IncorrectTokenCountException: Incorrect number of tokens found in record: expected 4 actual 5
+	at org.springframework.batch.item.file.transform.AbstractLineTokenizer.tokenize(AbstractLineTokenizer.java:125)
+	at org.springframework.batch.item.file.mapping.DefaultLineMapper.mapLine(DefaultLineMapper.java:43)
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:180)
+	... 21 more
+03/02/2016 18:04:40 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [FAILED]
+03/02/2016 18:04:40 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:04:40 INFO  - Ejecutado en 6 segundos, 640 milisisegundos
+03/02/2016 18:04:40 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+03/02/2016 18:05:40 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:05:40 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19877096: startup date [Wed Feb 03 18:05:40 CET 2016]; root of context hierarchy
+03/02/2016 18:05:40 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 18:05:41 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 18:05:41 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 18:05:41 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 18:05:41 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3fc3f8fd: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 18:05:41 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 18:05:42 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 18:05:42 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 18:05:42 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 18:05:42 INFO  Executing step: [AccesoFTP]
+03/02/2016 18:05:42 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+03/02/2016 18:05:43 INFO  Conectado correctamente al FTP.
+03/02/2016 18:05:44 INFO  Descargado fichero a ./ficheros/extraccion_medida.zip
+03/02/2016 18:05:45 INFO  ================== FIN TAREA ACCESO Y DESCARGA FTP   ================== 
+
+03/02/2016 18:05:45 INFO  Executing step: [descomprimirFichero]
+03/02/2016 18:05:45 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 18:05:45 INFO  Descomprimiendo fichero zip extraccion_medida.zip
+03/02/2016 18:05:45 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 18:05:45 INFO  Executing step: [deleteBBDD]
+03/02/2016 18:05:45 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 18:05:46 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 18:05:46 INFO  Executing step: [insertaTemplate]
+03/02/2016 18:05:46 INFO  Insertados 500 registros de 500
+03/02/2016 18:05:46 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:46 INFO  Insertados 500 registros de 1000
+03/02/2016 18:05:46 INFO  Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+03/02/2016 18:05:46 INFO  SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+03/02/2016 18:05:46 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:46 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:47 INFO  Insertados 500 registros de 1500
+03/02/2016 18:05:47 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:47 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:47 INFO  Insertados 500 registros de 2000
+03/02/2016 18:05:47 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:47 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:47 INFO  Insertados 500 registros de 2500
+03/02/2016 18:05:47 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:47 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:47 INFO  Insertados 500 registros de 3000
+03/02/2016 18:05:47 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:47 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:47 INFO  Insertados 500 registros de 3500
+03/02/2016 18:05:47 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:47 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:47 INFO  Insertados 500 registros de 4000
+03/02/2016 18:05:47 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:47 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:47 INFO  Insertados 500 registros de 4500
+03/02/2016 18:05:47 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:47 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:47 INFO  Insertados 500 registros de 5000
+03/02/2016 18:05:47 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:47 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:47 INFO  Insertados 500 registros de 5500
+03/02/2016 18:05:47 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:47 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:47 INFO  Insertados 500 registros de 6000
+03/02/2016 18:05:48 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:48 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:48 INFO  Insertados 500 registros de 6500
+03/02/2016 18:05:48 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:48 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:48 INFO  Insertados 500 registros de 7000
+03/02/2016 18:05:48 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:48 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:48 INFO  Insertados 500 registros de 7500
+03/02/2016 18:05:48 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:48 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:48 INFO  Insertados 500 registros de 8000
+03/02/2016 18:05:48 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:48 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:48 INFO  Insertados 500 registros de 8500
+03/02/2016 18:05:48 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:48 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:48 INFO  Insertados 500 registros de 9000
+03/02/2016 18:05:48 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:48 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:48 INFO  Insertados 500 registros de 9500
+03/02/2016 18:05:48 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:48 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:48 INFO  Insertados 500 registros de 10000
+03/02/2016 18:05:48 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:48 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:48 INFO  Insertados 500 registros de 10500
+03/02/2016 18:05:48 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:48 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:48 INFO  Insertados 500 registros de 11000
+03/02/2016 18:05:48 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:48 ERROR Error en el mapeo de la linea 
+03/02/2016 18:05:48 INFO  Insertados 500 registros de 11500
+03/02/2016 18:05:48 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:05:48 INFO  Insertados 22 registros de 11522
+03/02/2016 18:05:48 INFO  Executing step: [deleteFTPFiles]
+03/02/2016 18:05:48 INFO  ================== INICIO TAREA BORRADO FTP FICHEROS   ================== 
+03/02/2016 18:05:48 INFO  Se realiza conexion al FTP
+03/02/2016 18:05:48 INFO  ================== FIN TAREA BORRADO FTP FICHEROS  ================== 
+
+03/02/2016 18:05:48 INFO  Executing step: [deleteLocalFiles]
+03/02/2016 18:05:48 INFO  ================== INICIO BORRADO CSV EN CARPETA LOCAL  ================== 
+03/02/2016 18:05:48 INFO  Borrado fichero de la carpeta local
+03/02/2016 18:05:48 INFO  Borrado fichero de la carpeta local
+03/02/2016 18:05:48 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 18:05:49 INFO  Executing step: [fin]
+03/02/2016 18:05:49 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [COMPLETED]
+03/02/2016 18:05:49 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:05:49 INFO  - Ejecutado en 8 segundos, 398 milisisegundos
+03/02/2016 18:05:49 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+03/02/2016 18:12:39 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:12:39 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@391b1fc4: startup date [Wed Feb 03 18:12:39 CET 2016]; root of context hierarchy
+03/02/2016 18:12:39 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 18:12:39 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 18:12:40 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 18:12:40 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 18:12:40 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3e5b3b80: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 18:12:40 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 18:12:40 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 18:12:41 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 18:12:41 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 18:12:41 INFO  Executing step: [AccesoFTP]
+03/02/2016 18:12:41 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+03/02/2016 18:12:42 INFO  Conectado correctamente al FTP.
+03/02/2016 18:12:43 INFO  Descargado fichero a ./ficheros/extraccion_medida.zip
+03/02/2016 18:12:44 INFO  ================== FIN TAREA ACCESO Y DESCARGA FTP   ================== 
+
+03/02/2016 18:12:45 INFO  Executing step: [descomprimirFichero]
+03/02/2016 18:12:45 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 18:12:47 INFO  Descomprimiendo fichero zip extraccion_medida.zip
+03/02/2016 18:12:47 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 18:12:48 INFO  Executing step: [deleteBBDD]
+03/02/2016 18:12:48 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 18:12:48 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 18:12:48 INFO  Executing step: [insertaTemplate]
+03/02/2016 18:13:04 INFO  Insertados 500 registros de 500
+03/02/2016 18:15:15 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:16 INFO  Insertados 500 registros de 1000
+03/02/2016 18:15:18 INFO  Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+03/02/2016 18:15:18 INFO  SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+03/02/2016 18:15:18 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:18 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:19 INFO  Insertados 500 registros de 1500
+03/02/2016 18:15:34 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:34 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:36 INFO  Insertados 500 registros de 2000
+03/02/2016 18:15:39 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:39 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:39 INFO  Insertados 500 registros de 2500
+03/02/2016 18:15:39 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:39 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:39 INFO  Insertados 500 registros de 3000
+03/02/2016 18:15:39 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:39 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:39 INFO  Insertados 500 registros de 3500
+03/02/2016 18:15:39 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:39 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:39 INFO  Insertados 500 registros de 4000
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 4500
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 5000
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 5500
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 6000
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 6500
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 7000
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 7500
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 8000
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 8500
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 9000
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 9500
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 10000
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 10500
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 11000
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 ERROR Error en el mapeo de la linea 
+03/02/2016 18:15:40 INFO  Insertados 500 registros de 11500
+03/02/2016 18:15:40 ERROR Se ha producido un error al insertarSqlMapClient operation; SQL [];   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the insert-ListApellidos-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+03/02/2016 18:15:40 INFO  Insertados 22 registros de 11522
+03/02/2016 18:15:41 INFO  Executing step: [deleteFTPFiles]
+03/02/2016 18:15:41 INFO  ================== INICIO TAREA BORRADO FTP FICHEROS   ================== 
+03/02/2016 18:15:41 INFO  Se realiza conexion al FTP
+03/02/2016 18:15:41 INFO  ================== FIN TAREA BORRADO FTP FICHEROS  ================== 
+
+03/02/2016 18:15:41 INFO  Executing step: [deleteLocalFiles]
+03/02/2016 18:15:41 INFO  ================== INICIO BORRADO CSV EN CARPETA LOCAL  ================== 
+03/02/2016 18:15:41 INFO  Borrado fichero de la carpeta local
+03/02/2016 18:15:41 INFO  Borrado fichero de la carpeta local
+03/02/2016 18:15:41 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 18:15:41 INFO  Executing step: [fin]
+03/02/2016 18:15:41 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [COMPLETED]
+03/02/2016 18:15:41 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:15:41 INFO  - Ejecutado en 3 minutos, 2 segundos, 303 milisisegundos
+03/02/2016 18:15:41 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+03/02/2016 18:16:46 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:16:46 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19877096: startup date [Wed Feb 03 18:16:46 CET 2016]; root of context hierarchy
+03/02/2016 18:16:46 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 18:16:47 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 18:16:47 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 18:16:47 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 18:16:47 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3fc3f8fd: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 18:16:47 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 18:16:47 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 18:16:48 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 18:16:48 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 18:16:48 INFO  Executing step: [AccesoFTP]
+03/02/2016 18:16:48 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+03/02/2016 18:16:49 INFO  Conectado correctamente al FTP.
+03/02/2016 18:16:51 INFO  Descargado fichero a ./ficheros/extraccion_medida.zip
+03/02/2016 18:16:52 INFO  ================== FIN TAREA ACCESO Y DESCARGA FTP   ================== 
+
+03/02/2016 18:16:52 INFO  Executing step: [descomprimirFichero]
+03/02/2016 18:16:52 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 18:16:52 INFO  Descomprimiendo fichero zip extraccion_medida.zip
+03/02/2016 18:16:52 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 18:16:52 INFO  Executing step: [deleteBBDD]
+03/02/2016 18:16:52 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 18:16:52 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 18:16:52 INFO  Executing step: [insertaTemplate]
+03/02/2016 18:16:53 INFO  Insertados 500 registros de 500
+03/02/2016 18:16:53 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:53 INFO  Insertados 500 registros de 1000
+03/02/2016 18:16:53 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:53 INFO  Insertados 500 registros de 1500
+03/02/2016 18:16:54 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:54 INFO  Insertados 500 registros de 2000
+03/02/2016 18:16:54 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:54 INFO  Insertados 500 registros de 2500
+03/02/2016 18:16:54 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:54 INFO  Insertados 500 registros de 3000
+03/02/2016 18:16:54 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:54 INFO  Insertados 500 registros de 3500
+03/02/2016 18:16:54 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:54 INFO  Insertados 500 registros de 4000
+03/02/2016 18:16:54 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:54 INFO  Insertados 500 registros de 4500
+03/02/2016 18:16:54 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:54 INFO  Insertados 500 registros de 5000
+03/02/2016 18:16:54 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:54 INFO  Insertados 500 registros de 5500
+03/02/2016 18:16:55 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:55 INFO  Insertados 500 registros de 6000
+03/02/2016 18:16:55 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:55 INFO  Insertados 500 registros de 6500
+03/02/2016 18:16:55 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:55 INFO  Insertados 500 registros de 7000
+03/02/2016 18:16:55 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:55 INFO  Insertados 500 registros de 7500
+03/02/2016 18:16:55 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:55 INFO  Insertados 500 registros de 8000
+03/02/2016 18:16:55 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:55 INFO  Insertados 500 registros de 8500
+03/02/2016 18:16:55 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:55 INFO  Insertados 500 registros de 9000
+03/02/2016 18:16:55 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:55 INFO  Insertados 500 registros de 9500
+03/02/2016 18:16:55 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:55 INFO  Insertados 500 registros de 10000
+03/02/2016 18:16:55 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:55 INFO  Insertados 500 registros de 10500
+03/02/2016 18:16:55 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:55 INFO  Insertados 500 registros de 11000
+03/02/2016 18:16:55 ERROR Error en el mapeo de la linea 
+03/02/2016 18:16:55 INFO  Insertados 500 registros de 11500
+03/02/2016 18:16:55 INFO  Insertados 22 registros de 11522
+03/02/2016 18:16:55 INFO  Executing step: [deleteFTPFiles]
+03/02/2016 18:16:55 INFO  ================== INICIO TAREA BORRADO FTP FICHEROS   ================== 
+03/02/2016 18:16:55 INFO  Se realiza conexion al FTP
+03/02/2016 18:16:55 INFO  ================== FIN TAREA BORRADO FTP FICHEROS  ================== 
+
+03/02/2016 18:16:56 INFO  Executing step: [deleteLocalFiles]
+03/02/2016 18:16:56 INFO  ================== INICIO BORRADO CSV EN CARPETA LOCAL  ================== 
+03/02/2016 18:16:56 INFO  Borrado fichero de la carpeta local
+03/02/2016 18:16:56 INFO  Borrado fichero de la carpeta local
+03/02/2016 18:16:56 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 18:16:56 INFO  Executing step: [fin]
+03/02/2016 18:16:56 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [COMPLETED]
+03/02/2016 18:16:56 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:16:56 INFO  - Ejecutado en 9 segundos, 688 milisisegundos
+03/02/2016 18:16:56 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+03/02/2016 18:20:44 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:20:45 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@41a809a4: startup date [Wed Feb 03 18:20:45 CET 2016]; root of context hierarchy
+03/02/2016 18:20:45 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 18:20:45 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 18:20:45 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 18:20:45 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 18:20:45 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@387a4e7: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 18:20:46 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 18:20:46 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 18:20:47 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 18:20:47 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 18:20:47 INFO  Executing step: [AccesoFTP]
+03/02/2016 18:20:47 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+03/02/2016 18:20:47 INFO  Conectado correctamente al FTP.
+03/02/2016 18:20:48 INFO  Descargado fichero a ./ficheros/extraccion_medida.zip
+03/02/2016 18:20:50 INFO  ================== FIN TAREA ACCESO Y DESCARGA FTP   ================== 
+
+03/02/2016 18:20:50 INFO  Executing step: [descomprimirFichero]
+03/02/2016 18:20:50 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 18:20:52 INFO  Descomprimiendo fichero zip extraccion_medida.zip
+03/02/2016 18:20:52 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 18:20:52 INFO  Executing step: [deleteBBDD]
+03/02/2016 18:20:52 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 18:20:52 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 18:20:53 INFO  Executing step: [insertaTemplate]
+03/02/2016 18:20:53 INFO  Insertados 500 registros de 500
+03/02/2016 18:21:53 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:53 INFO  Insertados 500 registros de 1000
+03/02/2016 18:21:56 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:56 INFO  Insertados 500 registros de 1500
+03/02/2016 18:21:56 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:56 INFO  Insertados 500 registros de 2000
+03/02/2016 18:21:56 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:56 INFO  Insertados 500 registros de 2500
+03/02/2016 18:21:56 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:56 INFO  Insertados 500 registros de 3000
+03/02/2016 18:21:56 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:56 INFO  Insertados 500 registros de 3500
+03/02/2016 18:21:56 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:56 INFO  Insertados 500 registros de 4000
+03/02/2016 18:21:56 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:56 INFO  Insertados 500 registros de 4500
+03/02/2016 18:21:56 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:56 INFO  Insertados 500 registros de 5000
+03/02/2016 18:21:57 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:57 INFO  Insertados 500 registros de 5500
+03/02/2016 18:21:57 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:57 INFO  Insertados 500 registros de 6000
+03/02/2016 18:21:57 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:57 INFO  Insertados 500 registros de 6500
+03/02/2016 18:21:57 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:57 INFO  Insertados 500 registros de 7000
+03/02/2016 18:21:57 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:57 INFO  Insertados 500 registros de 7500
+03/02/2016 18:21:57 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:57 INFO  Insertados 500 registros de 8000
+03/02/2016 18:21:57 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:57 INFO  Insertados 500 registros de 8500
+03/02/2016 18:21:57 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:57 INFO  Insertados 500 registros de 9000
+03/02/2016 18:21:57 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:57 INFO  Insertados 500 registros de 9500
+03/02/2016 18:21:57 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:57 INFO  Insertados 500 registros de 10000
+03/02/2016 18:21:57 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:57 INFO  Insertados 500 registros de 10500
+03/02/2016 18:21:57 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:57 INFO  Insertados 500 registros de 11000
+03/02/2016 18:21:57 ERROR Error en el mapeo de la linea 
+03/02/2016 18:21:57 INFO  Insertados 500 registros de 11500
+03/02/2016 18:21:57 INFO  Insertados 22 registros de 11522
+03/02/2016 18:21:57 INFO  Executing step: [deleteFTPFiles]
+03/02/2016 18:21:57 INFO  ================== INICIO TAREA BORRADO FTP FICHEROS   ================== 
+03/02/2016 18:21:57 INFO  Se realiza conexion al FTP
+03/02/2016 18:21:57 INFO  ================== FIN TAREA BORRADO FTP FICHEROS  ================== 
+
+03/02/2016 18:21:58 INFO  Executing step: [deleteLocalFiles]
+03/02/2016 18:21:58 INFO  ================== INICIO BORRADO CSV EN CARPETA LOCAL  ================== 
+03/02/2016 18:21:58 INFO  Borrado fichero de la carpeta local
+03/02/2016 18:21:58 INFO  Borrado fichero de la carpeta local
+03/02/2016 18:21:58 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 18:21:58 INFO  Executing step: [fin]
+03/02/2016 18:21:58 INFO  Job: [FlowJob: [name=cargaTemplate]] completed with the following parameters: [{}] and the following status: [COMPLETED]
+03/02/2016 18:21:58 INFO  ---- Fin proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:21:58 INFO  - Ejecutado en 1 minuto, 13 segundos, 285 milisisegundos
+03/02/2016 18:21:58 INFO  ---- ULTIMALINEAPROCESO CargadorTemplate BIEN
+03/02/2016 18:22:18 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:22:18 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7f110fa8: startup date [Wed Feb 03 18:22:18 CET 2016]; root of context hierarchy
+03/02/2016 18:22:18 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 18:22:19 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 18:22:19 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 18:22:19 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 18:22:19 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@44628a21: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 18:22:20 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 18:22:20 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 18:22:20 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 18:22:20 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 18:22:20 INFO  Executing step: [AccesoFTP]
+03/02/2016 18:22:21 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+03/02/2016 18:22:21 INFO  Conectado correctamente al FTP.
+03/02/2016 18:22:22 INFO  Descargado fichero a ./ficheros/extraccion_medida.zip
+03/02/2016 18:22:24 INFO  ================== FIN TAREA ACCESO Y DESCARGA FTP   ================== 
+
+03/02/2016 18:22:24 INFO  Executing step: [descomprimirFichero]
+03/02/2016 18:22:24 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 18:22:25 INFO  Descomprimiendo fichero zip extraccion_medida.zip
+03/02/2016 18:22:25 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 18:22:26 INFO  Executing step: [deleteBBDD]
+03/02/2016 18:22:26 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 18:22:26 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 18:22:26 INFO  Executing step: [insertaTemplate]
+03/02/2016 18:22:53 INFO  Insertados 500 registros de 500
+03/02/2016 18:24:15 INFO  ---- Inicio proceso templateSpringBatch v01.00 (29/10/2015) ----
+03/02/2016 18:24:15 INFO  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@55936c40: startup date [Wed Feb 03 18:24:15 CET 2016]; root of context hierarchy
+03/02/2016 18:24:15 INFO  Loading XML bean definitions from class path resource [META-INF/applicationContext.xml]
+03/02/2016 18:24:15 INFO  Loading XML bean definitions from class path resource [META-INF/applicationDataSources.xml]
+03/02/2016 18:24:16 INFO  Loading properties file from class path resource [config/template/cfg/SqlMapConfig.properties]
+03/02/2016 18:24:16 INFO  Loading properties file from class path resource [config/template/cfg/prj.properties]
+03/02/2016 18:24:16 INFO  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3f608cc: defining beans [IApellidosDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,jobLauncher,org.springframework.batch.core.scope.internalStepScope,org.springframework.batch.core.scope.internalJobScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,batch_state_transition_comparator,AccesoFTP,descomprimirFichero,deleteBBDD,insertaTemplate,deleteFTPFiles,deleteLocalFiles,fin,org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean#0,cargaTemplate,DeciderReintentosFTP,taskExecutor,TaskDeleteBBDD,TaskDeleteLocalFiles,TaskDeleteFTPFiles,TaskAccesoFTP,TaskDescomprimirFichero,itemReader,FlatFileItemReader,fieldSetMapper,itemWriter,finTasklet,propertyConfigurer,sqlMapClientTemplate,sqlMapClient,dataSourceTemplate,transactionManager,ApellidosDao,ApellidosDaoImpl,defaultTxAttributes,jobRepository,JobTransactionManager,jobExplorer]; root of factory hierarchy
+03/02/2016 18:24:16 INFO  No TaskExecutor has been set, defaulting to synchronous executor.
+03/02/2016 18:24:16 INFO  Initializing ExecutorService  'taskExecutor'
+03/02/2016 18:24:17 INFO  templateSpringBatch v01.00 (29/10/2015)
+03/02/2016 18:24:17 INFO  Job: [FlowJob: [name=cargaTemplate]] launched with the following parameters: [{}]
+03/02/2016 18:24:17 INFO  Executing step: [AccesoFTP]
+03/02/2016 18:24:17 INFO  ================== INICIO TAREA ACCESO Y DESCARGA FTP   ================== 
+03/02/2016 18:24:18 INFO  Conectado correctamente al FTP.
+03/02/2016 18:24:19 INFO  Descargado fichero a ./ficheros/extraccion_medida.zip
+03/02/2016 18:24:20 INFO  ================== FIN TAREA ACCESO Y DESCARGA FTP   ================== 
+
+03/02/2016 18:24:20 INFO  Executing step: [descomprimirFichero]
+03/02/2016 18:24:20 INFO  ================== INICIO TAREA UNZIPFILES   ================== 
+03/02/2016 18:24:22 INFO  Descomprimiendo fichero zip extraccion_medida.zip
+03/02/2016 18:24:22 INFO  ==================   FIN TAREA UNZIP_FILES  ==================
+
+03/02/2016 18:24:23 INFO  Executing step: [deleteBBDD]
+03/02/2016 18:24:23 INFO  ================== INICIO BORRADO BBDD  ================== 
+03/02/2016 18:24:23 INFO  ================== FIN BORRADO BBDD   ================== 
+
+03/02/2016 18:24:23 INFO  Executing step: [insertaTemplate]
+03/02/2016 18:24:23 INFO  Insertados 500 registros de 500
+03/02/2016 18:25:03 ERROR Error en el mapeo de la linea 
+03/02/2016 18:25:09 INFO  Insertados 500 registros de 1000
